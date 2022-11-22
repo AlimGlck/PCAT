@@ -1,12 +1,23 @@
 const express = require('express');
 const path = require('path');
+const ejs = require('ejs');
 
 const app = express();
 
 app.use(express.static('public'));
 
+app.set('view engine', 'ejs');
+
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname,'temp','index.html'));
+  res.render('index');
+});
+
+app.get('/add', (req, res) => {
+  res.render('add');
+});
+
+app.get('/about', (req, res) => {
+  res.render('about');
 });
 
 const port = 3000;
