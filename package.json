@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "PCAT Photo App",
   "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "repository": "https://github.com/AlimGlck/PCAT.git",
   "author": "Alim Gölcük <alimglck5421@gmail.com>",
   "license": "MIT",
